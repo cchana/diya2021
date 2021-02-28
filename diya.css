@@ -1,0 +1,44 @@
+body{
+  background-color: hotpink;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+button {
+  background-color: purple;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  transition: box-shadow 0.25s;
+}
+
+button:after {
+  content: ' 💐🦄';
+  font-size: 2em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: left 0.2s;
+  z-index: -1;
+  width: 100%;
+}
+
+button:hover {
+  box-shadow: 0 5px 10px purple;
+}
+
+button:hover:after {
+  left: 100%;
+}
